@@ -14,7 +14,7 @@
   "log-file": null,
   "pools": [
     {
-      "url": "zephyr.herominers.com:1123",
+      "url": "127.0.0.1:3333"
       "user": "ZEPHYR2rrufFLcvhfVhD2NXcq21rk8c1p9omLSnnDFe8PVGjGo1ikivGyTEYrziKuKQFA9Fndfx5yJxYWxS8KQcyLH2qsWep29L32",
       "pass": "x",
       "coin": "zeph",
