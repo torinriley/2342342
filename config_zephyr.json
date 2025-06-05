@@ -1,0 +1,26 @@
+{
+  "autosave": true,
+  "background": false,
+  "cpu": {
+    "enabled": true
+  },
+  "http": {
+    "enabled": false
+  },
+  "log-file": null,
+  "pools": [
+    {
+      "url": "zephyr.herominers.com:1123",
+      "user": "ZEPHYR2rrufFLcvhfVhD2NXcq21rk8c1p9omLSnnDFe8PVGjGo1ikivGyTEYrziKuKQFA9Fndfx5yJxYWxS8KQcyLH2qsWep29L32",
+      "pass": "x",
+      "coin": "zeph",
+      "keepalive": true,
+      "tls": false
+    }
+  ],
+  "print-time": 60,
+  "retries": 5,
+  "retry-pause": 5,
+  "syslog": false,
+  "user-agent": null
+}
