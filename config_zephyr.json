@@ -5,7 +5,11 @@
     "enabled": true
   },
   "http": {
-    "enabled": false
+    "enabled": true,
+    "host": "0.0.0.0",
+    "port": 16000,
+    "access-token": "zephmon",
+    "restricted": false
   },
   "log-file": null,
   "pools": [
@@ -22,5 +26,5 @@
   "retries": 5,
   "retry-pause": 5,
   "syslog": false,
-  "user-agent": null
+  "user-agent": "xmrig-zeph/1.0.0"
 }
