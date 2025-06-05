@@ -1,0 +1,8 @@
+{
+  "bind": "127.0.0.1:3333",
+  "workers": true,
+  "access-token": "zephlocal",
+  "print-time": 60,
+  "mode": "normal",
+  "forward": "zephyr.herominers.com:1123"
+}
