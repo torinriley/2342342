@@ -1,3 +1,4 @@
+# Base image
 FROM debian:bullseye-slim
 
 # Install dependencies
@@ -5,13 +6,13 @@ RUN apt update && apt install -y \
     git build-essential cmake libuv1-dev libssl-dev libhwloc-dev && \
     rm -rf /var/lib/apt/lists/*
 
-# Clone XMRig
-RUN git clone https://github.com/xmrig/xmrig.git /xmrig
-WORKDIR /xmrig
+# Clone xmrig-proxy
+RUN git clone https://github.com/xmrig/xmrig-proxy.git /xmrig-proxy
+WORKDIR /xmrig-proxy
 RUN mkdir build && cd build && cmake .. && make -j$(nproc)
 
-# Add your Zephyr config
-COPY config_zephyr.json /xmrig/build/config.json
+# Copy in proxy config
+COPY config_proxy.json /xmrig-proxy/build/config.json
 
-# Run miner on start
-CMD ["/xmrig/build/xmrig", "-c", "/xmrig/build/config.json"]
+# Run the proxy
+CMD ["/xmrig-proxy/build/xmrig-proxy", "-c", "/xmrig-proxy/build/config.json"]
